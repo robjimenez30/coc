@@ -22,7 +22,7 @@ get_header(); ?>
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-preview">
-                    <a href="post.html">
+                    <!-- <a href="post.html"> -->
                         <h2 class="post-title">
                             LEAD YOUR CLAN TO VICTORY
                         </h2>
@@ -95,6 +95,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
+
 			<?php the_posts_navigation(); ?>
 
 		<?php else : ?>
@@ -102,6 +103,24 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
+
+        <?php rewind_posts(); ?>
+
+            <?php
+
+            $args=array('post_type' => 'portfolio_item', 'posts_per_page' => 10);
+            $loop = new WP_Query($args);
+            while ($loop->have_posts()): $loop->the_post();
+
+            the_title();
+            echo'<div class="entry-content">';
+            the_content();
+            echo '</div>';
+
+            endwhile;
+
+            ?>
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

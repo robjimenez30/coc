@@ -150,3 +150,41 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/*my code*/
+ function myFunction() {
+ global $wpdb;
+ $copyright_dates = $wpdb->get_results("
+ SELECT
+ YEAR(min(post_date_gmt)) AS firstdate,
+ YEAR(max(post_date_gmt)) AS lastdate
+ FROM
+ $wpdb->posts
+ WHERE
+ post_status = 'publish'
+ ");
+ $output = '';
+ if($copyright_dates) {
+ $copyright = "© " . $copyright_dates[0]->firstdate;
+ if($copyright_dates[0]->firstdate != $copyright_dates[0]->lastdate) {
+ $copyright .= '-' . $copyright_dates[0]->lastdate;
+ }
+ $output = $copyright;
+ }
+ return $output;
+ }
+ /*end*/
+
+function customSidebar(){
+
+	for ($i=0; $i<5 ; $i++){
+		echo 'Clash of Clan is awesome game for mobile devices and I recommended you play it.';
+		echo '<br>';
+	}
+
+}
+
+
+
+
+

@@ -26,10 +26,10 @@
     <title>COC</title>
     <!-- ======================MY LINKS======================================= -->
     <!-- Bootstrap Core CSS -->
-    <link href="wp-content/themes/coc/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://wpmmp.bmcc.cuny.edu/~rojimene/wp-content/themes/coc/assets/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="wp-content/themes/coc/assets/css/clean-blog.min.css" rel="stylesheet">
+    <link href="https://wpmmp.bmcc.cuny.edu/~rojimene/wp-content/themes/coc/assets/css/clean-blog.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -79,7 +79,7 @@
         <!-- /.container -->
     </nav>
 
-	<header class="intro-header" style="background-image: url('wp-content/themes/coc/assets/img/home-bg.jpg')">
+	<header class="intro-header" style="background-image: url('https://wpmmp.bmcc.cuny.edu/~rojimene/wp-content/themes/coc/assets/img/home-bg.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">

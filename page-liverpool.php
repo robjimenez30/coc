@@ -12,20 +12,20 @@
  * @package Liverpool_FC
  */
 
+
 get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-<h1>TEST PAGE</h1>
-<header class="intro-header" style="background-image: url('wp-content/themes/coc/assets/img/about-bg.jpg')">
+<header class="intro-header" style="background-image: url('https://wpmmp.bmcc.cuny.edu/~rojimene/wp-content/themes/coc/assets/img/home-bg.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="page-heading">
-                        <h1>About COC</h1>
+                    <div class="site-heading">
+                        <h1>LFC Liverpool</h1>
                         <hr class="small">
-                        <span class="subheading">This is our clan.</span>
+                        <span class="subheading">Best LFC Liverpool Clash of Clan Team</span>
                     </div>
                 </div>
             </div>
@@ -43,21 +43,10 @@ get_header(); ?>
 
     <hr>
 
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
-
-				<?php
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
-				?>
-
-			<?php endwhile; // End of the loop. ?>
+			
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php //get_sidebar(); ?>
-<?php //get_footer(); ?>
+<?php get_footer(); ?>
